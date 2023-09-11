@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html"><h2>VOLVER ATRÁS</h2></a>
+    
+    <h1 id="title">BIENVENIDO A ESTILOS DE CSS</h1>
+    
+    <h2 id="site_text" >Tamaños de texto</h2>
+    <h2 id="site_media" class="subtitles" name="subtitles">Redes sociales</h2>
+    <h2 id="site_images" class="subtitles" name="subtitles">Imágenes</h2>
+
+    <label for="sexo">Sexo:</label><br>
+    <label for="sex_mas">Mas:</label><input type="radio" id="sex_mas" class="input_radio_sex" name="sex_group"><br>
+    <label for="sex_fem">Fem:</label><input type="radio" id="sex_fem" class="input_radio_sex" name="sex_group"><br>
+    
+    <input type="text" disabled>
+    <input type="text" disabled>
+    <input type="text" autofocus><br>
+    <button id="btn_send">ENVIAR</button>
+
+    <h2>SELECTOR DESCENDENTE</h2>
+    <div id="papa">
+        <div class="hermanos">
+            <span id="nh_uno" class="nieto hijo">SPAN UNO</span><br>
+            <span id="nh_dos" class="nieto hijo">SPAN DOS</span>
+        </div>
+        <div class="hermanos">
+            <span id="texto" class="nieto hijo">SPAN TRES</span>
+        </div>
+    </div>
+    <span>TEXTO DE PRUEBA</span>
+    <br><br><br>
+</body>
+</html>
