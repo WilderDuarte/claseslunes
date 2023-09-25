@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root{
     --primary: #DD946F;
@@ -28,10 +28,12 @@ h1{
     width: 100vw;
     display: grid;
     place-items: center;
-    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-azure-universe-planet-cartoon-background-image_58913.jpg);
+    background-image: url(../img/universe.jpg);
+    opacity: 0.5;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-size: auto;
-    opacity: 0.5;
+    
 }
 
 .centering{
@@ -57,6 +59,13 @@ h1{
     padding: 32px;
 }
 
+.login{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .login_welcome{
     display: flex;
     width: 100%;
@@ -64,13 +73,6 @@ h1{
     align-items: center;
     flex-direction: column;
     gap: 8px;
-}
-
-.login{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .my_form_button{
@@ -85,7 +87,7 @@ h1{
     line-height: 50px;
     outline: none;
     font-size: 18px;
-    letter-spacing: 0.25em;
+    letter-spacing: .025em;
     text-decoration: none;
     cursor: pointer;
     font-weight: 800;
@@ -94,6 +96,7 @@ h1{
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0,0,0,.15);
     transition: all .3s ease;
+    /* -webkit-transition: all .3s ease; */
 }
 
 .text_field input{
@@ -102,7 +105,7 @@ h1{
     font-weight: 500;
     max-width: 100%;
     width: 100%;
-    border: 1px solid var (--secondary);
+    border: 1px solid var(--secondary);
     height: 50px;
     letter-spacing: .03rem;
     background-color: transparent;
@@ -169,7 +172,7 @@ h1{
     color: #A7A2CB;
 }
 
-.my_form{
+.my_form_row{
     display: flex;
     justify-content: space-between;
 }
